@@ -1,0 +1,7 @@
+x=7
+print x
+if x<5:
+    print "Smaller"
+elif x>5:
+    print "Bigger"
+print "Finish"
