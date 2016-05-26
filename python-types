@@ -1,0 +1,6 @@
+x = 100
+type(x)
+y= 34.5
+type(y)
+z= 45
+a = float(x)/z
