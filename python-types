@@ -8,3 +8,4 @@ i = 57
 type(i)
 j = float(i)
 type(j)
+e = 2*float(3)/2 - 8
