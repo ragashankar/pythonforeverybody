@@ -4,3 +4,7 @@ y= 34.5
 type(y)
 z= 45
 a = float(x)/z
+i = 57
+type(i)
+j = float(i)
+type(j)
