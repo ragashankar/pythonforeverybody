@@ -1,3 +1,15 @@
 name = raw_input('Who are you?')
 Who are you?#write the answer (Raghav)
 print 'Welcome',name # Output of print is Welcome Raghav
+
+-------------------------------------------------------------------------------------------------------------------
+
+
+x = raw_input("Enter the number")
+y=float(x)
+if y<2:
+    print 'Smaller'
+elif y>2 and y<10:
+    print 'Medium'
+else:
+    print 'Larger'
