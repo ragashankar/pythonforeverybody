@@ -1,0 +1,10 @@
+# An infinite loop  but stopped the exec by break statement
+
+n=5
+while n>0:
+    print 'start'
+    print 'continue as long as loop goes until break'
+    print 'break attained'
+    break
+    
+print 'Finish'
