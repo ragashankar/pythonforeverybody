@@ -20,16 +20,10 @@ try:
 	Hours = float(Hours_str)
 except:
     print 'Enter numeric input'
-
+---------------------------------------------------------------------------------------------------------------------------------------
+# With try and except
 Rate_str = raw_input("Enter rate: ")
 try:
 	Rate = float(Rate_str)
 except:
     print 'Enter numeric input'
-
-if Hours > 40:
-    Pay = 40*Rate + (Hours-40)*1.5*Rate
-    print Pay
-else:
-    Pay = Hours*Rate
-    print Pay
