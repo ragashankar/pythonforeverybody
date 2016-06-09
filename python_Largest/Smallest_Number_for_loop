@@ -9,9 +9,12 @@ print 'Largest is ',i
 
 -------------------------------------------------------------------------------------------------------------------------------------
 # Find the smallest number
-num=1000
+num=None
 for val in [43,56,78,65,21,98]:
-    if val<num:
+    if num is None:
+        num=val
+    elif val<num:
         num=val
     print num,val
 print 'Smallest number is ',num
+
