@@ -27,3 +27,18 @@ for x in [1,2,3,4,5]:
     count=count+1
     sum=sum+count
 print sum,count,sum/count
+----------------------------------------------------------------------------------------------------------------------------------
+# Using boolean values, find a value from the numbers in for loop and print the value and the boolean to be True when found
+
+for i in [56,6,7,43,9,22]:
+    found = False
+    if i==43:
+            found = True
+            print found,i
+            break
+    elif found == False:        
+        print found,i
+        
+    
+        
+    
