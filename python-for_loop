@@ -19,3 +19,11 @@ for friend in friends:
   Welcome Shankar
   Welcome Shyam
 ------------------------------------------------------------------------------------------------------------------------------------
+# Find sum and Average for a set of numbers (using for loop)
+
+count = 0
+sum = 0
+for x in [1,2,3,4,5]:
+    count=count+1
+    sum=sum+count
+print sum,count,sum/count
