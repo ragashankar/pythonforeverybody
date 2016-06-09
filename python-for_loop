@@ -1,0 +1,21 @@
+# Write a program using for loop to print set of values
+
+i=0                                                                                         
+for i in [1,2,3,4,5]:
+  print i
+  
+1
+2
+3
+4
+5
+------------------------------------------------------------------------------------------------------------------------------------
+friends = ['Ragha','Shankar','Shyam']
+
+for friend in friends:
+  print ' Welcome ',friend
+  
+  Welcome Ragha
+  Welcome Shankar
+  Welcome Shyam
+------------------------------------------------------------------------------------------------------------------------------------
