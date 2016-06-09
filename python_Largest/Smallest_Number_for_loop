@@ -1,0 +1,17 @@
+# Find the largest number
+i=0
+print 'Before',i
+for j in [9,41,12,3,74,15]:
+	if j>i:
+		i=j
+	print i,j
+print 'Largest is ',i
+
+-------------------------------------------------------------------------------------------------------------------------------------
+# Find the smallest number
+num=1000
+for val in [43,56,78,65,21,98]:
+    if val<num:
+        num=val
+    print num,val
+print 'Smallest number is ',num
