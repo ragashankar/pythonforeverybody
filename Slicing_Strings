@@ -7,4 +7,6 @@ print ' The two stark girls are',starks[0:14]
 ---------------------------------------------------------------------------------------------------------------------------------
 sentence = 'Valar Morghulis Valar Dolaeris'
 
-print sentence[:5], sentence[22:]
+print sentence[:5], sentence[22:] # prints Valar Dolaeris
+
+print [:]
