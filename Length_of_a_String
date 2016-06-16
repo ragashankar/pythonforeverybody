@@ -1,3 +1,13 @@
 # To find the Length of a string
 name = 'Raghav'
 print len(name)
+----------------------------------------------------------------------------------------------------------------------------------
+# To loop through the string
+
+name= 'Jithendravaradhan'
+index=0
+while index < len(name):
+    letter=name[index]
+    print letter,index
+    index=index+1
+print 'Done'
