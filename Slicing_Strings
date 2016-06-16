@@ -10,3 +10,11 @@ sentence = 'Valar Morghulis Valar Dolaeris'
 print sentence[:5], sentence[22:] # prints Valar Dolaeris
 
 print [:]
+----------------------------------------------------------------------------------------------------------------------------------
+# In python script
+if 'Mor' in sentence:
+    print "Exists"
+----------------------------------------------------------------------------------------------------------------------------------
+# In python shell
+>>> 'Mor' in sentence
+True
