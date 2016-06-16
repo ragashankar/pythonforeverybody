@@ -1,0 +1,55 @@
+https://docs.python.org/2/library/stdtypes.html#string-methods
+-------------------------------------------------------------------------------------------------------------------------------------
+# Using Upper and lower case
+name= 'Raghavendran Shankar'
+print name.lower()  # Result is raghavendran Shankar
+print name.upper() # Result is RAGHAVENDRAN SHANKAR
+
+lower = name.lower()
+print lower
+cap = name.capitalize()
+print cap # result : Raghavendran shankar
+--------------------------------------------------------------------------------------------------------------------------------------
+# Getting to know what are all built-in functions that can be used for string
+
+print dir(sentence)
+
+Output:
+
+['__add__', '__contains__', '__eq__', '__ge__', '__getattr__', '__getitem__', '__gt__', '__hash__', 
+'__iter__', '__le__', '__len__', '__lt__', '__mul__', '__ne__', '__repr__', '__rmul__', '__setattr__',
+'__str__', 'capitalize', 'center', 'count', 'endswith', 'expandtabs', 'find', 'format', 'index',
+'isalnum', 'isalpha', 'isdigit', 'islower', 'isnumeric', 'isspace', 'istitle', 'isupper', 'join',
+'ljust', 'lower', 'lstrip', 'partition', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 
+'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'upper', 'zfill']
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------
+# To find the position of a character in a string
+aa = sentence.find('Mor')
+print aa
+Output: 6
+-----------------------------------------------------------------------------------------------------------------------------------
+# To replace a char or a word
+line = 'The North Remembers'
+print line.replace('Remembers','Forgets') # The North Forgets
+print line.replace('e','f') # The North Rfmfbfrs
+
+----------------------------------------------------------------------------------------------------------------------------------
+# Stripping Whitespaces
+
+play = ' A girl is Arya Stark '
+print play.lstrip() # 'A girl is Arya Stark '
+print play.rstrip() # ' A girl is Arya Stark'
+print play.strip() # 'A girl is Arya Stark'
+---------------------------------------------------------------------------------------------------------------------------------
+# Startswith() and endswith()
+line = 'The North Remembers'
+line.startswith('T') # True
+line.startswith('t) # False
+line.startswith('The') #True
+
+line.endswith('s') # True
+line.endswith('Remembers') # True
+
