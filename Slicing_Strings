@@ -3,3 +3,8 @@ starks = 'Sansa and Arya, Brandon and Rickon'
 print 'The two stark boys are',starks[16:34] # print the line where the letter starts from 16th position to 34
 
 print ' The two stark girls are',starks[0:14]
+
+---------------------------------------------------------------------------------------------------------------------------------
+sentence = 'Valar Morghulis Valar Dolaeris'
+
+print sentence[:5], sentence[22:]
