@@ -1,0 +1,54 @@
+# Open a File
+fopen=open('chumma.txt')
+for p in fopen:
+    print p
+------------------------------------------------------------------------------------------------------------
+# Read a file
+sample2=open('chumma.txt')
+read_file=sample2.read()
+
+print read_file
+print len(read_file)
+
+-------------------------------------------------------------------------------------------------------------
+# Read the specific content in a file
+sample1=open('chumma.txt')
+for line in sample1:
+    if line.startswith('You'):
+        print line
+------------------------------------------------------------------------------------------------------------
+# Using continue
+sample4=open('chumma.txt')
+for line in sample4:
+    line=line.rstrip()
+    if not line.startswith('You'):
+        continue
+    print line
+
+-----------------------------------------------------------------------------------------------------------
+# Using user input and try and except
+try:
+    
+    sample6=raw_input('Enter the file: ')
+    fopen=open(sample6)
+    count=0
+    for line in fopen:
+        line=line.rstrip()
+        if line.startswith('The'):
+            count=count+1
+    print '\nThe number of lines that starts with The are',count,'in',sample6
+except:
+    print 'No such file exists'
+
+--------------------------------------------------------------------------------------------------------------
+# Capitalize every char in the contnet of the file
+
+fname = raw_input('Enter file name:')
+fopen=open(fname)
+for line in fopen:
+    if not line.startswith('You'):
+        continue
+    line=line.rstrip()
+    line=line.upper()
+    print line
+-----------------------------------------------------------------------------------------------------------------
