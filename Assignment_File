@@ -1,0 +1,12 @@
+# Open the file mbox-short.txt file and read only the lines that starts with 'X-DSPAM-Confidence'. Take those values and find the average
+
+fname = raw_input("Enter file name: ")
+fh = open(fname)
+j=0
+c=0
+for line in fh:
+    if not line.startswith("X-DSPAM-Confidence:") : continue
+    j=j+float(line[20:])
+    c=c+1
+print 'Average spam confidence: ',j/c
+
