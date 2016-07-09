@@ -1,0 +1,35 @@
+# Adding values to the corresponding keys in dictionary and changing the value through binary operators 
+
+num = dict()
+num['Val1:']=34
+num['Val2:']=45
+num1={}
+num1 = {'Val3':45,'Val4':67}
+print num,num1
+
+num1['Val3'] = num1['Val3']+45
+print num1
+---------------------------------------------------------------------------------------------------------------------------------------
+
+# Represent keys , values and items(tuples) in a dictionary
+GOT = {'Starks':3,'Lannisters':3,'Baratheon':1,'Targeryan':2}
+print GOT.keys()
+print GOT.values()
+print GOT.items()
+print list(GOT)
+
+------------------------------------------------------------------------------------------------------------------------------
+# Counting the values in dictionary
+Houses = ['stark','lannister','Baratheon','stark','Targeryan','lannister','Mormont']
+num=dict()
+for name in Houses:
+    if name not in num:
+        num[name]=1
+    else:
+        num[name]=num[name]+1
+print num
+------------------------------------------------------------------------------------------------------------------------
+# Tracback errors
+rtu={}
+print'cde' in rtu # Shows traceback error since the key is not in the list
+
