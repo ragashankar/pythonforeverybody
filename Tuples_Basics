@@ -1,0 +1,56 @@
+# Basic program - 1
+rpy = {'Raghav':47,'Gaayu':34,'Resh':78}
+print rpy.items()
+
+for key,value in rpy.items():
+    print key,value
+---------------------------------------------------------------------------------------------------------------------------
+# Basic program - 2
+dct = dict()
+dct['csev'] = 1
+dct['cwen'] = 34
+dct['gwen']=89
+for k,v in dct.items():
+    
+    print k,v # Prints key and corresponding value 
+print dct # print dictionary
+print dct.items() # prints tuples
+----------------------------------------------------------------------------------------------------------------------------
+# Tuples comparability
+>>> (0,1,2) < (0,0.5,1000000) # Returns False
+
+>>> ('Adams','Zenecan') > ('Joey','Joffrey') # Returns False
+
+>>> ('Amy','Beth') < ('Raghav','Tun') # Returns True
+---------------------------------------------------------------------------------------------------------------------------
+# Mutability
+x = ('sam','billy','joseph')
+x[1] = 'Joffrey'
+print x # returns error,traceback call
+---------------------------------------------------------------------------------------------------------------------------
+# Tuples not supporting certain methods
+tup = (1,2,3,4,5)
+try:
+    tup.append(31)
+except:
+    print "Cannot append values in tuples"
+try:
+    tup.sort()
+except:
+    print "Cannot sort values in tuples but can sort from a dictionary"
+try:
+    tup.reverse()
+except:
+    print "Cannot reverse in tuples"
+    
+# Inference: Tuples supports only count() and index()
+---------------------------------------------------------------------------------------------------------------------------
+# Tuples assignment
+(a,b) = (99,98)
+print a,b
+x,y = ('fred',4)
+print x,y
+r,t=89,76
+print r,t
+--------------------------------------------------------------------------------------------------------------------------
+
