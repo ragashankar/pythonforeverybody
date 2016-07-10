@@ -1,0 +1,55 @@
+# Sorting from a file
+fopen= open('romeo.txt')
+dct=dict()
+for line in fopen:
+    words = line.split()
+    for word in words:
+        dct[word]=dct.get(word,0)+1
+# Sort by values
+lst=list()
+for key,val in dct.items():
+    lst.append((val,key))
+print 'The unsorted list is ',lst
+
+lst.sort(reverse=True)
+
+print 'The desc order is ',lst
+
+lst.sort()
+
+print 'The default order is ',lst
+# To find the bigword and its value in dict
+bigcount = None
+bigword = None
+
+for w,c in dct.items():
+    if bigcount is None or c>bigcount:
+        bigword=w
+        bigcount=c
+print bigword,bigcount
+
+#Top 10 common words
+lst.sort(reverse=True)
+for val,key in lst[:10]:
+    print key,val # Prints the top 10 most comman words
+
+#Easiest way to sort based on values
+dct2 = {'c':45,'b':55,'j':90,'a':67}
+print sorted([(v,k) for k,v in dct2.items()])
+    
+    
+-----------------------------------------------------------------------------------------------------------------------
+# Sort the 'hours' from file 'mbox-short.txt' where the line starts with 'From '.
+Take the count of hour repetition and sort using hours as keys in asc order
+fopen = open('mbox-short.txt')
+dct=dict()
+for line in fopen:
+    if not line.startswith('From '):
+        continue
+    l1=line.rstrip()
+    l2=l1.split()
+    t=l2[5].split(':')
+    dct[t[0]] = dct.get(t[0],0)+1
+for key,val in sorted(dct.items()):
+    print key,val
+-----------------------------------------------------------------------------------------------------------------------
