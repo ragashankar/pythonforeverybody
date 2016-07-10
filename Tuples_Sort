@@ -1,0 +1,43 @@
+# Sorting keys in ascending and descending
+
+d = {'Starks':1,'Lannis':4,'Baratheon':6,'Targy':10}
+print 'The unordered dict is',d
+
+tup = d.items()
+print 'The unsorted order in tuples is',tup
+
+# Sort values in tuples using keys
+
+tup.sort()
+
+print 'The sorted order in tuples is',tup
+
+tup.sort(reverse=True)
+
+print 'The descending sorted order in tuples is',tup
+-------------------------------------------------------------------------------------------------------------------------
+# Using sorted() method
+d = {'aravind':56,'zenefer':67,'Heather':98,'ibahli':76,'joffrey':87}
+
+tup = sorted(d.items())
+
+print tup
+
+for k,v in sorted(d.items()):
+    print k,v
+--------------------------------------------------------------------------------------------------------------------------
+# Sort by values and not keys in tuples
+dct = {'a':1,'u':56,'i':98,'r':90,'t':67}
+
+lst = list()
+
+for key,val in dct.items():
+    lst.append((val,key))
+print 'The unsorted list is ',lst
+
+lst.sort(reverse=True) # Sorts value in descending order)
+print 'Descending order of values in list are ',lst
+
+lst.sort() # Sorts by default in asc order
+
+print 'Ascending order of values in list are ',lst
