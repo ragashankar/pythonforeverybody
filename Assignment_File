@@ -1,6 +1,6 @@
 # Open the file mbox-short.txt file and read only the lines that starts with 'X-DSPAM-Confidence'. Take those values and find the average
 
-fname = raw_input("Enter file name: ")
+fname = raw_input("ENter file name: ")
 fh = open(fname)
 j=0
 c=0
